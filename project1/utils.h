@@ -14,19 +14,19 @@
 
 	typedef struct heap {
 		int size;
-		void *list[];
-	} heap_st
+		void *list[10000];
+	} heap_st;
 
 	typedef struct event_holder {
 		event_st *e;
-		queue_elem_st *next;
-	}queue_elem_st;
+		struct event_holder *next;
+	} queue_elem_st;
 
 	typedef struct queue {
 		queue_elem_st *head;
 		queue_elem_st *tail;
 		int size;
-	}queue_st;
+	} queue_st;
 
 	void *extract_heap(heap_st *h);
 
@@ -40,4 +40,5 @@
 
 	event_st *get_event_from_queue(queue_st *q);
 
+	void debug_event(event_st *e);
 #endif
