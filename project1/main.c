@@ -26,7 +26,7 @@ static void runSimulation(int terms, int qsize, int servers, double mu, double l
 	// generate L arrival events and add to heap
 	int i = 0;
 	for (i = 0; i < terms; i++) {
-		event_st *ev = generate_event(i+1, clock+exponential_rv((terms-N)*lambda), ARRIVAL_EVENT);
+		event_st *ev = generate_event(i+1, clock+exponential_rv(lambda), ARRIVAL_EVENT);
 		insert_heap(&h, (void *)ev);
 	}
 	// while !done
@@ -44,14 +44,10 @@ static void runSimulation(int terms, int qsize, int servers, double mu, double l
 		if (ev->event_type == ARRIVAL_EVENT) {
 			total_arrival++;
 			// if N >= K 
-			if (N >= qsize) {
+			if (N == qsize) {
 				// discard this event, increment blocking
 				// generate new arrival event for the terminal and add to heap
-				int x = 1;
-				if (terms-N > 0) {
-					x = terms-N;
-				}
-				event_st *e = generate_event(ev->terminal, clock+exponential_rv(x*lambda), ARRIVAL_EVENT);
+				event_st *e = generate_event(ev->terminal, clock+exponential_rv(lambda), ARRIVAL_EVENT);
 				//debug_event(e);
 				insert_heap(&h, (void *)e);
 				free(ev);
@@ -60,7 +56,7 @@ static void runSimulation(int terms, int qsize, int servers, double mu, double l
 			// else if N < m
 			  else if (N < servers) {
 				// generate departure event for the terminal and add to heap
-				event_st *e = generate_event(ev->terminal, clock+exponential_rv((N+1)*mu), DEPARTURE_EVENT);
+				event_st *e = generate_event(ev->terminal, clock+exponential_rv(mu), DEPARTURE_EVENT);
 				//debug_event(e);
 				insert_heap(&h, (void*)e);
 				free(ev);
@@ -98,12 +94,12 @@ static void runSimulation(int terms, int qsize, int servers, double mu, double l
 					} else {
 						x = N;
 					}
-					event_st *de = generate_event(e->terminal, clock+exponential_rv(x*mu), DEPARTURE_EVENT);
+					event_st *de = generate_event(e->terminal, clock+exponential_rv(mu), DEPARTURE_EVENT);
 					insert_heap(&h, de);
 					free(e);
 				}
 				// generate arrival event for the terminal and add to heap
-				event_st *ae = generate_event(ev->terminal, clock+exponential_rv((terms-N)*lambda), ARRIVAL_EVENT);
+				event_st *ae = generate_event(ev->terminal, clock+exponential_rv(lambda), ARRIVAL_EVENT);
 				//debug_event(ae);
 				insert_heap(&h, ae);
 			}
@@ -119,7 +115,7 @@ static void runSimulation(int terms, int qsize, int servers, double mu, double l
 
 	printf("Current no. of customers in the system: %d\n", N);
 	printf("Expected no. of customers in the system: %lf\n", EN/clock);
-	printf("Total Arrived: %d Blocked %d\n", total_arrival, dropped);
+	printf("Total Arrived: %d Blocked %d Probability: %lf\n", total_arrival, dropped, (double)dropped/(double)total_arrival);
 }
 
 int main() {
@@ -130,7 +126,7 @@ int main() {
 	double lambda;
 	double mu;
 
-	int runs = 100000;
+	int runs = 1000000;
 
 	getInput(&L, &K, &m, &mu);
 	lambda = 0.1 * m * mu;
