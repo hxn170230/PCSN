@@ -106,18 +106,16 @@ void *extract_heap(heap_st *h) {
 	return data;
 }
 
-static double s = 1111;
-
-static double uniform_rv() {
+static double uniform_rv(double *s) {
 	double k = 16807;
 	double m = 2147483647;
-	s = fmod(k*s, m);
-	double r = s/m;
+	*s = fmod(k*(*s), m);
+	double r = (*s)/m;
 	return r;
 }
 
-double exponential_rv(double lambda) {
-	double urv = uniform_rv();
+double exponential_rv(double lambda, double *s) {
+	double urv = uniform_rv(s);
 	double exprv = (-1/lambda)*log(urv);
 	return exprv;
 }

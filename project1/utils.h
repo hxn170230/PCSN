@@ -8,7 +8,11 @@
 
 	typedef struct event {
 		int terminal;
+		int server;
 		double time;
+		double arr_time;
+		double depart_time;
+		double service_time;
 		EVENT_TYPE event_type;
 	} event_st;
 
@@ -32,7 +36,7 @@
 
 	int insert_heap(heap_st *h, void *data);
 
-	double exponential_rv(double lambda);
+	double exponential_rv(double lambda, double *seed);
 
 	event_st *generate_event(int terminal, double time, EVENT_TYPE event);
 
