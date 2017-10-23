@@ -1,3 +1,7 @@
+/*
+ * Harshavardhan Nalajala 
+ * hxn170230
+ */
 #ifndef __UTILS_H
 	#define __UTILS_H
 
@@ -18,7 +22,7 @@
 
 	typedef struct heap {
 		int size;
-		void *list[10000];
+		void *list[100000];
 	} heap_st;
 
 	typedef struct event_holder {

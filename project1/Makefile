@@ -1,3 +1,5 @@
+# Harshavardhan Nalajala
+# hxn170230
 q_simulator: main.o utils.o
 	gcc -o q_simulator main.o utils.o
 
