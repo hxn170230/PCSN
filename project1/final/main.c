@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// scans the input from input.in or stdin
 static void getInput(int *L, int *K, int *m, double *mu, int *runs) {
 	scanf("%d", runs);
 	scanf("%d", L);
@@ -14,6 +15,7 @@ static void getInput(int *L, int *K, int *m, double *mu, int *runs) {
 	scanf("%lf", mu);
 }
 
+// returns the free server available.
 static int get_next_free_server(int servers, int *busy) {
 	int i = 0;
 	for (i = 0; i < servers; i++) {
@@ -92,7 +94,9 @@ static void runSimulation(int terms, int qsize, int servers, double mu, double l
 				// generate departure event for the terminal and add to heap
 				int server_id = get_next_free_server(servers, server_busy);
 				event_st *e = generate_event(ev->terminal, clock+exponential_rv(mu, &server_seed[server_id]), DEPARTURE_EVENT);
+				// server being used
 				e->server = server_id;
+				// acceptance of job
 				e->arr_time = clock;
 				e->service_time = e->time - clock;
 				server_busy[server_id] = 1;
@@ -120,9 +124,11 @@ static void runSimulation(int terms, int qsize, int servers, double mu, double l
 			ev->depart_time = clock;
 			//printf("Depart TIME: %lf arr time: %lf time_diff: %lf\n", ev->depart_time, ev->arr_time, ev->depart_time - ev->arr_time);
 			Ndep++;
+			// Expected time in system
 			ET += (ev->depart_time - ev->arr_time);
 			N--;
 
+			// server idle
 			server_busy[ev->server] = 0;
 			// if (Ndep < TOTAL)
 			if (Ndep < TOTAL) {
@@ -161,13 +167,14 @@ static void runSimulation(int terms, int qsize, int servers, double mu, double l
 		//printf("%d,%lf\n",N,clock);
 	}
 
+	// calculation of theoritical values
 	double val = 1;
 	for (i = 1; i <= qsize; i++) {
 		int j = 0;
 		double v = 1;
 		for (j = 0; j < i; j++) {
 			v = v*(terms-j)*(lambda/mu);
-	}
+		}
 		for (j = 1; j <= i; j++) {
 			if (j < servers) {
 				v = v/j;
@@ -177,9 +184,11 @@ static void runSimulation(int terms, int qsize, int servers, double mu, double l
 		}
 		val = val + v;
 	}
+	// P0
 	double probs[qsize];
 	probs[0] = 1/val;
 	for (i = 1; i <= qsize; i++) {
+		// Pi
 		if (i < servers) {
 			probs[i] = (lambda/(i*mu))*(terms-i+1)*(probs[i-1]);
 		} else {
@@ -190,6 +199,7 @@ static void runSimulation(int terms, int qsize, int servers, double mu, double l
 	double avglambda = 0;
 	double util = 0;
 	val = 0;
+	// expected number, average lambda to calculate expected time
 	for (i = 0; i <= qsize; i++) {
 		expVal += i*probs[i];
 		if (i != qsize)
@@ -201,11 +211,14 @@ static void runSimulation(int terms, int qsize, int servers, double mu, double l
 			util += probs[i];
 		}
 	}
+	// blocking probability
 	double blocked = ((terms-qsize)*lambda*probs[qsize])/val;
-	system_busy_time = system_busy_time/servers;
 
+	system_busy_time = system_busy_time/servers;
 	printf("%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf\n", lambda, EN/clock, expVal, ET/Ndep,
-			expVal/avglambda, dropped/total_arrival, blocked, util, system_busy_time/clock);
+			expVal/avglambda, dropped/total_arrival, blocked, (util*100), (system_busy_time/clock)*100);
+
+	deinitHeapAndQueue(&h, &q);
 }
 
 int main() {

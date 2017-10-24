@@ -7,11 +7,13 @@
 #include <stdlib.h>
 #include <math.h>
 
+// API to debug event
 void debug_event(event_st *ev) {
 	char *s = ev->event_type==ARRIVAL_EVENT?"ARRIVAL":"DEPARTURE";
 	printf("[terminal: %d]: [%s] [clock: %lf] \n", ev->terminal, s, ev->time);
 }
 
+// API to debug heap
 void debug_heap(heap_st *h) {
 	printf("HEAP: size[%d]\n", h->size);
 	int i = 0;
@@ -21,6 +23,7 @@ void debug_heap(heap_st *h) {
 	printf("\n");
 }
 
+// API to order events according to time
 static int min_heapify(heap_st *h) {
 	int pos = h->size - 1;
 	
@@ -41,6 +44,7 @@ static int min_heapify(heap_st *h) {
 	return 0;
 }
 
+// API to insert data to heap
 int insert_heap(heap_st *h, void *data) {
 	if (!h) {
 		h = (heap_st *)malloc(sizeof(heap_st));
@@ -55,6 +59,7 @@ int insert_heap(heap_st *h, void *data) {
 	}
 }
 
+// API to extract data from heap
 void *extract_heap(heap_st *h) {
 	if (!h || h->size == 0) {
 		return NULL;
@@ -110,6 +115,7 @@ void *extract_heap(heap_st *h) {
 	return data;
 }
 
+// API to generate uniform random variable
 static double uniform_rv(double *s) {
 	double k = 16807;
 	double m = 2147483647;
@@ -118,12 +124,14 @@ static double uniform_rv(double *s) {
 	return r;
 }
 
+// API to generate exponential random variable
 double exponential_rv(double lambda, double *s) {
 	double urv = uniform_rv(s);
 	double exprv = (-1/lambda)*log(urv);
 	return exprv;
 }
 
+// API to allocate memory to event
 event_st *generate_event(int terminal, double time, EVENT_TYPE event) {
 	event_st *e = (event_st *)malloc(sizeof(event_st));
 	e->terminal = terminal;
@@ -132,6 +140,7 @@ event_st *generate_event(int terminal, double time, EVENT_TYPE event) {
 	return e;
 }
 
+// API to add event to queue
 void add_event_to_queue(queue_st *q, event_st *e) {
 	if (q->size == 0) {
 		q->head = (queue_elem_st *)malloc(sizeof(queue_elem_st));
@@ -148,6 +157,7 @@ void add_event_to_queue(queue_st *q, event_st *e) {
 	q->size += 1;
 }
 
+// API to extract event from queue
 event_st *get_event_from_queue(queue_st *q) {
 	if (q->size == 0) {
 		return NULL;
@@ -168,4 +178,37 @@ event_st *get_event_from_queue(queue_st *q) {
 		free(elem);
 		return ev;
 	}
+}
+
+// API to deallocate memory assigned to events in heap
+// NOTE: heap is input and has to be handled by caller
+static void deinitHeap(heap_st *h) {
+	int len = h->size;
+	int i = 0;
+	for (i = 0; i < len; i++) {
+		event_st *e = h->list[i];
+		h->list[i] = NULL;
+		free(e);
+		h->size -= 1;
+	}
+}
+
+// API to deallocate memory to queue elements in the queue.
+// NOTE: queue is input and has to be handled by caller
+static void deinitQueue(queue_st *q) {
+	while (q->head) {
+		queue_elem_st *elem = q->head;
+		event_st *e = elem->e;
+		q->head = (q->head)->next;
+		free(e);
+		free(elem);
+	}
+	q->tail = NULL;
+	q->head = NULL;
+}
+
+// Helper function to deallocate memory assigned to events in queue and heap
+void deinitHeapAndQueue(heap_st *h, queue_st *q) {
+	deinitHeap(h);
+	deinitQueue(q);
 }

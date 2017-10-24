@@ -49,4 +49,5 @@
 	void add_event_to_queue(queue_st *q, event_st *data);
 	event_st *get_event_from_queue(queue_st *q);
 	void debug_event(event_st *e);
+	void deinitHeapAndQueue(heap_st *h, queue_st *q);
 #endif

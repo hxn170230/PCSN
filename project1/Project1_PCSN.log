@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.10)  23 OCT 2017 20:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.10)  24 OCT 2017 10:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -56,7 +56,7 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-No file Project1_PCSN.aux.
+(./Project1_PCSN.aux)
 \openout1 = `Project1_PCSN.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -71,6 +71,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
+
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count88
@@ -138,243 +139,380 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 8.
 
-No file Project1_PCSN.toc.
+(./Project1_PCSN.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 8.
+)
 \tf@toc=\write3
 \openout3 = `Project1_PCSN.toc'.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 16.
+
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
  [1
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<ExpectedNumber_L1_K4_M2_U3.png, id=12, 462.528pt x 346.896pt>
-File: ExpectedNumber_L1_K4_M2_U3.png Graphic file (type png)
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 
-<use ExpectedNumber_L1_K4_M2_U3.png>
-Package pdftex.def Info: ExpectedNumber_L1_K4_M2_U3.png used on input line 47.
-(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
-
-<ExpectedTime_L1_K4_M2_U3.png, id=14, 462.528pt x 346.896pt>
-File: ExpectedTime_L1_K4_M2_U3.png Graphic file (type png)
-
-<use ExpectedTime_L1_K4_M2_U3.png>
-Package pdftex.def Info: ExpectedTime_L1_K4_M2_U3.png used on input line 48.
-(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
-
-<BlockingProbability_L1_K4_M2_U3.png, id=15, 462.528pt x 346.896pt>
-File: BlockingProbability_L1_K4_M2_U3.png Graphic file (type png)
-
-<use BlockingProbability_L1_K4_M2_U3.png>
-Package pdftex.def Info: BlockingProbability_L1_K4_M2_U3.png used on input line
- 49.
-(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
-
-<Utilization_L1_K4_M2_U3.png, id=16, 462.528pt x 346.896pt>
-File: Utilization_L1_K4_M2_U3.png Graphic file (type png)
-
-<use Utilization_L1_K4_M2_U3.png>
-Package pdftex.def Info: Utilization_L1_K4_M2_U3.png used on input line 50.
-(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
-
-Overfull \hbox (102.52686pt too wide) in paragraph at lines 47--51
-[]
- []
-
-
-Overfull \hbox (102.52686pt too wide) in paragraph at lines 47--51
-[]
- []
-
-
-Overfull \hbox (102.52686pt too wide) in paragraph at lines 47--51
-[]
- []
-
-
-Overfull \hbox (102.52686pt too wide) in paragraph at lines 47--51
-[] 
- []
-
-[2] [3 <./ExpectedNumber_L1_K4_M2_U3.png>] [4 <./ExpectedTime_L1_K4_M2_U3.png>]
-[5 <./BlockingProbability_L1_K4_M2_U3.png>]
-<ExpectedNumber_L10_K4_M2_U3.png, id=32, 462.528pt x 346.896pt>
+<ExpectedNumber_L10_K4_M2_U3.png, id=18, 462.528pt x 346.896pt>
 File: ExpectedNumber_L10_K4_M2_U3.png Graphic file (type png)
 
 <use ExpectedNumber_L10_K4_M2_U3.png>
-Package pdftex.def Info: ExpectedNumber_L10_K4_M2_U3.png used on input line 53.
+Package pdftex.def Info: ExpectedNumber_L10_K4_M2_U3.png used on input line 96.
 
 (pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
 
-<ExpectedTime_L10_K4_M2_U3.png, id=33, 462.528pt x 346.896pt>
+<ExpectedTime_L10_K4_M2_U3.png, id=20, 462.528pt x 346.896pt>
 File: ExpectedTime_L10_K4_M2_U3.png Graphic file (type png)
 
 <use ExpectedTime_L10_K4_M2_U3.png>
-Package pdftex.def Info: ExpectedTime_L10_K4_M2_U3.png used on input line 54.
+Package pdftex.def Info: ExpectedTime_L10_K4_M2_U3.png used on input line 97.
 (pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
 
-<BlockingProbability_L10_K4_M2_U3.png, id=34, 462.528pt x 346.896pt>
+<BlockingProbability_L10_K4_M2_U3.png, id=21, 462.528pt x 346.896pt>
 File: BlockingProbability_L10_K4_M2_U3.png Graphic file (type png)
 
 <use BlockingProbability_L10_K4_M2_U3.png>
 Package pdftex.def Info: BlockingProbability_L10_K4_M2_U3.png used on input lin
-e 55.
+e 98.
 (pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
 
-<Utilization_L10_K4_M2_U3.png, id=35, 462.528pt x 346.896pt>
+<Utilization_L10_K4_M2_U3.png, id=22, 462.528pt x 346.896pt>
 File: Utilization_L10_K4_M2_U3.png Graphic file (type png)
 
 <use Utilization_L10_K4_M2_U3.png>
-Package pdftex.def Info: Utilization_L10_K4_M2_U3.png used on input line 56.
+Package pdftex.def Info: Utilization_L10_K4_M2_U3.png used on input line 99.
 (pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
 
-Overfull \hbox (102.52686pt too wide) in paragraph at lines 53--57
+Overfull \hbox (102.52686pt too wide) in paragraph at lines 96--100
 []
  []
 
 
-Overfull \hbox (102.52686pt too wide) in paragraph at lines 53--57
+Overfull \hbox (102.52686pt too wide) in paragraph at lines 96--100
 []
  []
 
 
-Overfull \hbox (102.52686pt too wide) in paragraph at lines 53--57
+Overfull \hbox (102.52686pt too wide) in paragraph at lines 96--100
 []
  []
 
 
-Overfull \hbox (102.52686pt too wide) in paragraph at lines 53--57
+Overfull \hbox (102.52686pt too wide) in paragraph at lines 96--100
 [] 
  []
 
-[6 <./Utilization_L1_K4_M2_U3.png>] [7 <./ExpectedNumber_L10_K4_M2_U3.png>]
-[8 <./ExpectedTime_L10_K4_M2_U3.png>] [9 <./BlockingProbability_L10_K4_M2_U3.pn
-g>] <ExpectedNumber_L1000_K4_M2_U3.png, id=53, 462.528pt x 346.896pt>
-File: ExpectedNumber_L1000_K4_M2_U3.png Graphic file (type png)
+[4]
+Overfull \vbox (174.79521pt too high) has occurred while \output is active []
 
-<use ExpectedNumber_L1000_K4_M2_U3.png>
-Package pdftex.def Info: ExpectedNumber_L1000_K4_M2_U3.png used on input line 5
-9.
-(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
 
-<ExpectedTime_L1000_K4_M2_U3.png, id=54, 462.528pt x 346.896pt>
-File: ExpectedTime_L1000_K4_M2_U3.png Graphic file (type png)
+[5 <./ExpectedNumber_L10_K4_M2_U3.png> <./ExpectedTime_L10_K4_M2_U3.png>]
+[6 <./BlockingProbability_L10_K4_M2_U3.png>]
+<ExpectedNumber_L1_K4_M2_U3.png, id=35, 462.528pt x 346.896pt>
+File: ExpectedNumber_L1_K4_M2_U3.png Graphic file (type png)
 
-<use ExpectedTime_L1000_K4_M2_U3.png>
-Package pdftex.def Info: ExpectedTime_L1000_K4_M2_U3.png used on input line 60.
+<use ExpectedNumber_L1_K4_M2_U3.png>
+Package pdftex.def Info: ExpectedNumber_L1_K4_M2_U3.png used on input line 102.
 
 (pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
 
-<BlockingProbability_L1000_K4_M2_U3.png, id=55, 462.528pt x 346.896pt>
-File: BlockingProbability_L1000_K4_M2_U3.png Graphic file (type png)
+<ExpectedTime_L1_K4_M2_U3.png, id=36, 462.528pt x 346.896pt>
+File: ExpectedTime_L1_K4_M2_U3.png Graphic file (type png)
 
-<use BlockingProbability_L1000_K4_M2_U3.png>
-Package pdftex.def Info: BlockingProbability_L1000_K4_M2_U3.png used on input l
-ine 61.
+<use ExpectedTime_L1_K4_M2_U3.png>
+Package pdftex.def Info: ExpectedTime_L1_K4_M2_U3.png used on input line 103.
 (pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
 
-<Utilization_L1000_K4_M2_U3.png, id=56, 462.528pt x 346.896pt>
-File: Utilization_L1000_K4_M2_U3.png Graphic file (type png)
+<BlockingProbability_L1_K4_M2_U3.png, id=37, 462.528pt x 346.896pt>
+File: BlockingProbability_L1_K4_M2_U3.png Graphic file (type png)
 
-<use Utilization_L1000_K4_M2_U3.png>
-Package pdftex.def Info: Utilization_L1000_K4_M2_U3.png used on input line 62.
+<use BlockingProbability_L1_K4_M2_U3.png>
+Package pdftex.def Info: BlockingProbability_L1_K4_M2_U3.png used on input line
+ 104.
 (pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
 
-Overfull \hbox (102.52686pt too wide) in paragraph at lines 59--63
+<Utilization_L1_K4_M2_U3.png, id=38, 462.528pt x 346.896pt>
+File: Utilization_L1_K4_M2_U3.png Graphic file (type png)
+
+<use Utilization_L1_K4_M2_U3.png>
+Package pdftex.def Info: Utilization_L1_K4_M2_U3.png used on input line 105.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+Overfull \hbox (102.52686pt too wide) in paragraph at lines 102--106
 []
  []
 
 
-Overfull \hbox (102.52686pt too wide) in paragraph at lines 59--63
+Overfull \hbox (102.52686pt too wide) in paragraph at lines 102--106
 []
  []
 
 
-Overfull \hbox (102.52686pt too wide) in paragraph at lines 59--63
+Overfull \hbox (102.52686pt too wide) in paragraph at lines 102--106
 []
  []
 
 
-Overfull \hbox (102.52686pt too wide) in paragraph at lines 59--63
+Overfull \hbox (102.52686pt too wide) in paragraph at lines 102--106
 [] 
  []
 
-[10 <./Utilization_L10_K4_M2_U3.png>] [11 <./ExpectedNumber_L1000_K4_M2_U3.png>
-] [12 <./ExpectedTime_L1000_K4_M2_U3.png>] [13 <./BlockingProbability_L1000_K4_
-M2_U3.png>] <ExpectedNumber_L10_K4_M4_U3.png, id=74, 462.528pt x 346.896pt>
+[7 <./Utilization_L10_K4_M2_U3.png>]
+Overfull \vbox (174.79521pt too high) has occurred while \output is active []
+
+
+[8 <./ExpectedNumber_L1_K4_M2_U3.png> <./ExpectedTime_L1_K4_M2_U3.png>]
+[9 <./BlockingProbability_L1_K4_M2_U3.png>]
+<ExpectedNumber_L10_K4_M4_U3.png, id=53, 462.528pt x 346.896pt>
 File: ExpectedNumber_L10_K4_M4_U3.png Graphic file (type png)
 
 <use ExpectedNumber_L10_K4_M4_U3.png>
-Package pdftex.def Info: ExpectedNumber_L10_K4_M4_U3.png used on input line 65.
-
+Package pdftex.def Info: ExpectedNumber_L10_K4_M4_U3.png used on input line 110
+.
 (pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
 
-<ExpectedTime_L10_K4_M4_U3.png, id=75, 462.528pt x 346.896pt>
+<ExpectedTime_L10_K4_M4_U3.png, id=54, 462.528pt x 346.896pt>
 File: ExpectedTime_L10_K4_M4_U3.png Graphic file (type png)
 
 <use ExpectedTime_L10_K4_M4_U3.png>
-Package pdftex.def Info: ExpectedTime_L10_K4_M4_U3.png used on input line 66.
+Package pdftex.def Info: ExpectedTime_L10_K4_M4_U3.png used on input line 111.
 (pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
 
-<BlockingProbability_L10_K4_M4_U3.png, id=76, 462.528pt x 346.896pt>
+<BlockingProbability_L10_K4_M4_U3.png, id=55, 462.528pt x 346.896pt>
 File: BlockingProbability_L10_K4_M4_U3.png Graphic file (type png)
 
 <use BlockingProbability_L10_K4_M4_U3.png>
 Package pdftex.def Info: BlockingProbability_L10_K4_M4_U3.png used on input lin
-e 67.
+e 112.
 (pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
 
-<Utilization_L10_K4_M4_U3.png, id=77, 462.528pt x 346.896pt>
+<Utilization_L10_K4_M4_U3.png, id=56, 462.528pt x 346.896pt>
 File: Utilization_L10_K4_M4_U3.png Graphic file (type png)
 
 <use Utilization_L10_K4_M4_U3.png>
-Package pdftex.def Info: Utilization_L10_K4_M4_U3.png used on input line 68.
+Package pdftex.def Info: Utilization_L10_K4_M4_U3.png used on input line 113.
 (pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
 
-Overfull \hbox (102.52686pt too wide) in paragraph at lines 65--69
+Overfull \hbox (102.52686pt too wide) in paragraph at lines 110--114
 []
  []
 
 
-Overfull \hbox (102.52686pt too wide) in paragraph at lines 65--69
+Overfull \hbox (102.52686pt too wide) in paragraph at lines 110--114
 []
  []
 
 
-Overfull \hbox (102.52686pt too wide) in paragraph at lines 65--69
+Overfull \hbox (102.52686pt too wide) in paragraph at lines 110--114
 []
  []
 
 
-Overfull \hbox (102.52686pt too wide) in paragraph at lines 65--69
+Overfull \hbox (102.52686pt too wide) in paragraph at lines 110--114
 [] 
  []
 
-[14 <./Utilization_L1000_K4_M2_U3.png>] [15 <./ExpectedNumber_L10_K4_M4_U3.png>
-] [16 <./ExpectedTime_L10_K4_M4_U3.png>] [17 <./BlockingProbability_L10_K4_M4_U
-3.png>] [18 <./Utilization_L10_K4_M4_U3.png>] (./Project1_PCSN.aux) ) 
+[10 <./Utilization_L1_K4_M2_U3.png>]
+Overfull \vbox (174.79521pt too high) has occurred while \output is active []
+
+
+[11 <./ExpectedNumber_L10_K4_M4_U3.png> <./ExpectedTime_L10_K4_M4_U3.png>]
+[12 <./BlockingProbability_L10_K4_M4_U3.png>]
+<ExpectedNumber_L100_K30_M25_U3.png, id=70, 462.528pt x 346.896pt>
+File: ExpectedNumber_L100_K30_M25_U3.png Graphic file (type png)
+
+<use ExpectedNumber_L100_K30_M25_U3.png>
+Package pdftex.def Info: ExpectedNumber_L100_K30_M25_U3.png used on input line 
+116.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+<ExpectedTime_L100_K30_M25_U3.png, id=71, 462.528pt x 346.896pt>
+File: ExpectedTime_L100_K30_M25_U3.png Graphic file (type png)
+
+<use ExpectedTime_L100_K30_M25_U3.png>
+Package pdftex.def Info: ExpectedTime_L100_K30_M25_U3.png used on input line 11
+7.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+<BlockingProbability_L100_K30_M25_U3.png, id=72, 462.528pt x 346.896pt>
+File: BlockingProbability_L100_K30_M25_U3.png Graphic file (type png)
+
+<use BlockingProbability_L100_K30_M25_U3.png>
+Package pdftex.def Info: BlockingProbability_L100_K30_M25_U3.png used on input 
+line 118.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+<Utilization_L100_K30_M25_U3.png, id=73, 462.528pt x 346.896pt>
+File: Utilization_L100_K30_M25_U3.png Graphic file (type png)
+
+<use Utilization_L100_K30_M25_U3.png>
+Package pdftex.def Info: Utilization_L100_K30_M25_U3.png used on input line 119
+.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+Overfull \hbox (102.52686pt too wide) in paragraph at lines 116--120
+[]
+ []
+
+
+Overfull \hbox (102.52686pt too wide) in paragraph at lines 116--120
+[]
+ []
+
+
+Overfull \hbox (102.52686pt too wide) in paragraph at lines 116--120
+[]
+ []
+
+
+Overfull \hbox (102.52686pt too wide) in paragraph at lines 116--120
+[] 
+ []
+
+[13 <./Utilization_L10_K4_M4_U3.png>]
+Overfull \vbox (174.79521pt too high) has occurred while \output is active []
+
+
+[14 <./ExpectedNumber_L100_K30_M25_U3.png> <./ExpectedTime_L100_K30_M25_U3.png>
+] [15 <./BlockingProbability_L100_K30_M25_U3.png>]
+<ExpectedNumber_L100_K75_M25_U10.png, id=88, 462.528pt x 346.896pt>
+File: ExpectedNumber_L100_K75_M25_U10.png Graphic file (type png)
+
+<use ExpectedNumber_L100_K75_M25_U10.png>
+Package pdftex.def Info: ExpectedNumber_L100_K75_M25_U10.png used on input line
+ 122.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+<ExpectedTime_L100_K75_M25_U10.png, id=89, 462.528pt x 346.896pt>
+File: ExpectedTime_L100_K75_M25_U10.png Graphic file (type png)
+
+<use ExpectedTime_L100_K75_M25_U10.png>
+Package pdftex.def Info: ExpectedTime_L100_K75_M25_U10.png used on input line 1
+23.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+<BlockingProbability_L100_K75_M25_U10.png, id=90, 462.528pt x 346.896pt>
+File: BlockingProbability_L100_K75_M25_U10.png Graphic file (type png)
+
+<use BlockingProbability_L100_K75_M25_U10.png>
+Package pdftex.def Info: BlockingProbability_L100_K75_M25_U10.png used on input
+ line 124.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+<Utilization_L100_K75_M25_U10.png, id=91, 462.528pt x 346.896pt>
+File: Utilization_L100_K75_M25_U10.png Graphic file (type png)
+
+<use Utilization_L100_K75_M25_U10.png>
+Package pdftex.def Info: Utilization_L100_K75_M25_U10.png used on input line 12
+5.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+Overfull \hbox (102.52686pt too wide) in paragraph at lines 122--126
+[]
+ []
+
+
+Overfull \hbox (102.52686pt too wide) in paragraph at lines 122--126
+[]
+ []
+
+
+Overfull \hbox (102.52686pt too wide) in paragraph at lines 122--126
+[]
+ []
+
+
+Overfull \hbox (102.52686pt too wide) in paragraph at lines 122--126
+[] 
+ []
+
+[16 <./Utilization_L100_K30_M25_U3.png>]
+Overfull \vbox (174.79521pt too high) has occurred while \output is active []
+
+
+[17 <./ExpectedNumber_L100_K75_M25_U10.png> <./ExpectedTime_L100_K75_M25_U10.pn
+g>] [18 <./BlockingProbability_L100_K75_M25_U10.png>]
+<ExpectedNumber_L1000_K4_M2_U3.png, id=105, 462.528pt x 346.896pt>
+File: ExpectedNumber_L1000_K4_M2_U3.png Graphic file (type png)
+
+<use ExpectedNumber_L1000_K4_M2_U3.png>
+Package pdftex.def Info: ExpectedNumber_L1000_K4_M2_U3.png used on input line 1
+28.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+<ExpectedTime_L1000_K4_M2_U3.png, id=106, 462.528pt x 346.896pt>
+File: ExpectedTime_L1000_K4_M2_U3.png Graphic file (type png)
+
+<use ExpectedTime_L1000_K4_M2_U3.png>
+Package pdftex.def Info: ExpectedTime_L1000_K4_M2_U3.png used on input line 129
+.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+<BlockingProbability_L1000_K4_M2_U3.png, id=107, 462.528pt x 346.896pt>
+File: BlockingProbability_L1000_K4_M2_U3.png Graphic file (type png)
+
+<use BlockingProbability_L1000_K4_M2_U3.png>
+Package pdftex.def Info: BlockingProbability_L1000_K4_M2_U3.png used on input l
+ine 130.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+<Utilization_L1000_K4_M2_U3.png, id=108, 462.528pt x 346.896pt>
+File: Utilization_L1000_K4_M2_U3.png Graphic file (type png)
+
+<use Utilization_L1000_K4_M2_U3.png>
+Package pdftex.def Info: Utilization_L1000_K4_M2_U3.png used on input line 131.
+
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+Overfull \hbox (102.52686pt too wide) in paragraph at lines 128--132
+[]
+ []
+
+
+Overfull \hbox (102.52686pt too wide) in paragraph at lines 128--132
+[]
+ []
+
+
+Overfull \hbox (102.52686pt too wide) in paragraph at lines 128--132
+[]
+ []
+
+
+Overfull \hbox (102.52686pt too wide) in paragraph at lines 128--132
+[] 
+ []
+
+[19 <./Utilization_L100_K75_M25_U10.png>]
+Overfull \vbox (174.79521pt too high) has occurred while \output is active []
+
+
+[20 <./ExpectedNumber_L1000_K4_M2_U3.png> <./ExpectedTime_L1000_K4_M2_U3.png>]
+[21 <./BlockingProbability_L1000_K4_M2_U3.png>] [22 <./Utilization_L1000_K4_M2_
+U3.png>] (./Project1_PCSN.aux) ) 
 Here is how much of TeX's memory you used:
- 1584 strings out of 493014
- 24607 string characters out of 6133351
- 80546 words of memory out of 5000000
- 5118 multiletter control sequences out of 15000+600000
- 8452 words of font info for 30 fonts, out of 8000000 for 9000
+ 1632 strings out of 493014
+ 26293 string characters out of 6133351
+ 81546 words of memory out of 5000000
+ 5154 multiletter control sequences out of 15000+600000
+ 8811 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,6n,23p,311b,234s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local
-/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/
-texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Project1_PCSN.pdf (18 pages, 388295 bytes).
+ 37i,6n,23p,575b,260s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb>
+Output written on Project1_PCSN.pdf (22 pages, 559794 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
+ 148 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
