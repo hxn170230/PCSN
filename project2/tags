@@ -1,0 +1,22 @@
+EVENT_TYPE	./utils.h	/^	} EVENT_TYPE;$/
+Mmain	./main.c	/^int main() {$/
+PRIORITY_TYPE	./utils.h	/^	} PRIORITY_TYPE;$/
+QUEUE_TYPE	./utils.h	/^	} QUEUE_TYPE;$/
+add_event_to_queue	./utils.c	/^void add_event_to_queue(queue_st *q, event_st *e) /
+debug_event	./utils.c	/^void debug_event(event_st *ev) {$/
+debug_heap	./utils.c	/^void debug_heap(heap_st *h) {$/
+event_st	./utils.h	/^	} event_st;$/
+exponential_rv	./utils.c	/^double exponential_rv(double lambda, double *s) {$/
+extract_heap	./utils.c	/^void *extract_heap(heap_st *h) {$/
+generate_event	./utils.c	/^event_st *generate_event(QUEUE_TYPE queue, double /
+generate_lambda_event	./main.c	/^event_st *generate_lambda_event(double *s_pH, doub/
+getInput	./main.c	/^void getInput(double *pH, double *r11L,$/
+get_event_from_queue	./utils.c	/^event_st *get_event_from_queue(queue_st *q) {$/
+heap_st	./utils.h	/^	} heap_st;$/
+insert_heap	./utils.c	/^int insert_heap(heap_st *h, void *data) {$/
+min_heapify	./utils.c	/^static int min_heapify(heap_st *h) {$/
+processArrivalEvent	./main.c	/^int processArrivalEvent(queue_st *q, event_st *e, /
+queue_elem_st	./utils.h	/^	} queue_elem_st;$/
+queue_st	./utils.h	/^	} queue_st;$/
+runSimulation	./main.c	/^void runSimulation(double total, double lambda, do/
+uniform_rv	./utils.c	/^double uniform_rv(double *s) {$/
